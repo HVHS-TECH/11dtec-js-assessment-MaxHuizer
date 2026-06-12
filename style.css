@@ -1,0 +1,32 @@
+body {
+    background-color:black;
+}
+
+.gridContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.logo{
+    grid-column: span 3;
+    background-color:grey;
+}
+
+.bagelsButton{
+    grid-column:span 1;
+    background-color:grey;
+    align-items: center;
+}
+
+.donutsButton{
+    grid-column:span 1;
+    background-color:grey;
+    align-items: center;
+}
+
+.drinksButton{
+    grid-column: span 1;
+    background-color:grey;
+    align-items: center;
+}
