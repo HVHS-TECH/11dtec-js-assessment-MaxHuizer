@@ -11,6 +11,13 @@ body {
 .logo{
     grid-column: span 3;
     background-color:grey;
+    width:auto;
+    height:60px;
+}
+
+.logo img {
+    width:auto;
+    height:auto;
 }
 
 .bagelsButton{
