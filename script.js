@@ -1,1 +1,11 @@
-console.log("Hello world!")
+//Variables
+var userName;
+var pocketMoney;
+
+/*****************
+Main Code
+*****************/
+
+/*****************************
+ Functions
+******************************/
