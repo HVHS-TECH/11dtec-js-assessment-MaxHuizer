@@ -8,11 +8,13 @@ body {
     grid-template-columns: 4fr 2fr;
     grid-template-rows: auto auto auto;
     padding:15px;
+    background-color:brown;
 }
 
 
 .Title {
     grid-column:span 2;
+    text-align:center;
 }
 
 .Title img {
