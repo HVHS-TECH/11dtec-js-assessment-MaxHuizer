@@ -1,14 +1,25 @@
 body {
     background-color:black;
+    color:gold;
 }
 
 .container {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 4fr 2fr;
     grid-template-rows: auto auto auto;
     padding:15px;
 }
 
+
+.Title {
+    grid-column:span 2;
+}
+
+.Title img {
+    height:350px;
+    width:auto;
+}
+
 .donutContent {
-    
+    grid-column: span 1;
 }
