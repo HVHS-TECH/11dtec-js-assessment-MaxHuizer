@@ -8,7 +8,6 @@ body {
     grid-template-columns: 4fr 2fr;
     grid-template-rows: auto auto auto auto auto auto
     padding:15px;
-    background-color:black;
 }
 
 
@@ -23,22 +22,23 @@ body {
 }
 
 .donutContent {
-    padding:100px;
+    padding:10px;
     grid-column: span 1;
     background-color:blue;
     margin:10px;
+    border:2px; gold;
 }
 
 .orderContent {
-    padding:100px;
+    padding:10px;
     grid-column: span 1;
-    grid-row: span 3;
+    grid-row: span 10;
     background-color:yellow;
     margin:10px;
 }
 
 .bagelContent {
-    padding:100px;
+    padding:10px;
     grid-column: span 1;
     background-color:red;
     margin:10px;
