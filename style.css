@@ -29,6 +29,12 @@ body {
     border-color: gold;
 }
 
+.donutImage img{
+    width:200px;
+    height:200;
+    text-align:left;
+}
+
 .orderContent {
     padding:10px;
     grid-column: span 1;
