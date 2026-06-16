@@ -24,9 +24,10 @@ body {
 .donutContent {
     padding:10px;
     grid-column: span 1;
-    background-color:blue;
+    background-color: gray;
     margin:10px;
-    border:2px; gold;
+    border:2px solid;
+    border-color:white;
 }
 
 .orderContent {
