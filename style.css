@@ -24,6 +24,7 @@ body {
 .donutContent {
     display:grid;
     grid-template-columns:1fr 6fr;
+    gap:10px;
     padding:10px;
     grid-column: span 1;
     margin:10px;
@@ -32,6 +33,12 @@ body {
 }
 
 .donutImage img{
+    width:200px;
+    height:200;
+    text-align:left;
+}
+
+.bagelImage img{
     width:200px;
     height:200;
     text-align:left;
@@ -47,10 +54,12 @@ body {
 }
 
 .bagelContent {
+    display:grid;
+    grid-template-columns:1fr 6fr;
+    gap:10px;
     padding:10px;
     grid-column: span 1;
     margin:10px;
     border:2px solid;
     border-color: gold;
-    text-align:left;
 }
