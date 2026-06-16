@@ -57,7 +57,7 @@ body {
 .orderContent {
     padding:10px;
     grid-column: span 1;
-    grid-row: span 10;
+    grid-row: span 100;
     margin:10px;
     border:2px solid;
     border-color: gold;
