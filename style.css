@@ -1,7 +1,11 @@
 body {
     background-color:black;
     color:gold;
-    font-family: "MedievalSharp";
+      font-family: "Uncial Antiqua", system-ui;
+}
+
+p { 
+
 }
 
 .container {
