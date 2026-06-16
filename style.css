@@ -22,6 +22,8 @@ body {
 }
 
 .donutContent {
+    display:grid;
+    grid-template-columns:1fr 6fr;
     padding:10px;
     grid-column: span 1;
     margin:10px;
