@@ -21,6 +21,16 @@ body {
     width:auto;
 }
 
+.donutsTitle {
+    grid-column:span 2;
+    padding-left:10px;
+}
+
+.bagelsTitle {
+    grid-column:span 2;
+    padding-left:10px;
+}
+
 .donutContent {
     display:grid;
     grid-template-columns:1fr 6fr;
