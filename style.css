@@ -47,6 +47,16 @@ p {
     border-color: gold;
 }
 
+.donutContent:hover {
+border-color:white;
+color:white;
+}
+
+.bagelContent:hover{
+    border-color:white;
+    color:white;
+}
+
 .donutImage img{
     width:200px;
     height:200;
