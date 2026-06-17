@@ -38,11 +38,12 @@ p {
 
 .donutContent {
     display:grid;
-    grid-template-columns:1fr 6fr;
+    grid-template-columns:1fr 6fr 1fr;
     gap:10px;
     padding:10px;
     grid-column: span 1;
     margin:10px;
+    border-radius:5px;
     border:2px solid;
     border-color: gold;
 }
@@ -61,6 +62,8 @@ color:#dba904;
     width:200px;
     height:200;
     text-align:left;
+    border:2px solid;
+    border-color:gold;
 }
 
 .bagelImage img{
@@ -76,15 +79,45 @@ color:#dba904;
     margin:10px;
     border:2px solid;
     border-color: gold;
+    border-radius:5px;
 }
 
 .bagelContent {
     display:grid;
-    grid-template-columns:1fr 6fr;
+    grid-template-columns:1fr 6fr 1fr;
+    grid-template-rows: auto auto auto;
     gap:10px;
     padding:10px;
     grid-column: span 1;
     margin:10px;
+    border-radius:5px;
     border:2px solid;
     border-color: gold;
+}
+
+button {
+    background-color:black;
+    border:2px solid;
+    border-color:gold;
+    font-family:"Cinzel", serif;
+    color:gold;
+    border-radius:100px;
+    width:60px;
+    height:60px;
+    font-size:40px;
+}
+
+button:hover {
+    cursor:pointer;
+    background-color:gold;
+    border-color:gold;
+    color:black;
+}
+
+.button {
+    grid-column:span 1;
+    grid-row:span 3;
+    align-self:end;
+    justify-self:right;
+    padding:10px;
 }
