@@ -48,13 +48,13 @@ p {
 }
 
 .donutContent:hover {
-border-color:#dba904;
+border-color:#bd9204;
 color:#dba904;
 }
 
 .bagelContent:hover{
-    border-color:white;
-    color:white;
+border-color:#bd9204;
+color:#dba904;
 }
 
 .donutImage img{
