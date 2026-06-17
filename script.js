@@ -11,4 +11,5 @@ Main Code
  Functions
 ******************************/
 
-OUTPUT.innerHTML += "<h2>Hello this is a test</h2>";
+const OUTPUT = document.getElementById("orderContent");
+OUTPUT.innerHTML += "Your Order:";
