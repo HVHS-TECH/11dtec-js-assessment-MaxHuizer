@@ -10,3 +10,5 @@ Main Code
 /*****************************
  Functions
 ******************************/
+
+output.innerHTML += "<p>Hello this is a test</p>"
