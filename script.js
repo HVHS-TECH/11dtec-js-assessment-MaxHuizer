@@ -1,22 +1,18 @@
 //Variables
 var userName;
 var pocketMoney;
-var menuArray
-["The One Ring",
-"Shire Sprinkle",
-"Misty Mountain Maple",
-"Gandalf's Sweet Spell",
-"The Hobbit Hole",
-"Bagel of Five Armies",
-"Smaug's Spicy Bagel",
-"Second Breakfast Bagel"];
 
 
 /*****************
 Main Code
 *****************/
+const OUTPUT = document.getElementById("orderContent");
+addToOrder("The One Ring", $6);
 
 
 /*****************************
  Functions
 ******************************/
+function addToOrder(_name, _price) {
+    OUTPUT.innerHTML += "<p>" + _name + ": $" + _price+"</p>"
+}
