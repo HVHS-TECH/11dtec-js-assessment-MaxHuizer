@@ -11,6 +11,8 @@ var menuArray
     "Smaugs Spicy Bagel",
     "Second Breakfast Bagel"]
 
+var
+
 /*****************
 Main Code
 *****************/
