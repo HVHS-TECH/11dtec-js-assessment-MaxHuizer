@@ -2,11 +2,12 @@
 var userName;
 var pocketMoney;
 
+
 /*****************
 Main Code
 *****************/
 const OUTPUT = document.getElementById("orderContent");
-addToOrder("The One Ring", $6);
+addToOrder
 
 
 /*****************************
@@ -16,4 +17,6 @@ function addToOrder(_name, _price) {
     OUTPUT.innerHTML += "<p>" + _name + ": $" + _price+"</p>"
 }
 
-function completeOrder
+function completeOrder(){
+    OUTPUT.innerHTML += "<p> Your total price is" + _price+"</p>"
+}
