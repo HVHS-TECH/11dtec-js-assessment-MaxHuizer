@@ -32,8 +32,11 @@ addToOrder
 /*****************************
  Functions
 ******************************/
-function addToOrder(_name, _price) {
-    OUTPUT.innerHTML += "<p>" + _name + ": $" + _price+"</p>"
+function addToOrder(index) {
+    OUTPUT.innerHTML +=
+        "<p>" + menuArray[index] +
+        ": $" + priceArray[index] +
+        "</p>";
 }
 
 function completeOrder() {
