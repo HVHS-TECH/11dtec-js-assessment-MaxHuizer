@@ -40,5 +40,5 @@ function addToOrder(i) {
 }
 
 function completeOrder() {
-    ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
+    
 }
