@@ -133,11 +133,11 @@ color:#dba904;
 }
 
 .completeOrderButton button:hover {
-    background-color:black;
-    border:2px solid;
+    cursor:pointer;
+    background-color:gold;
     border-color:gold;
+    color:black;
     font-family:"Cinzel", serif;
-    color:gold;
     border-radius:100px;
     width:150px;
     height:50px;
