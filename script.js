@@ -1,6 +1,6 @@
 //Variables
 var userName;
-var totalPrice = 0;
+var totalPrice;
 var menuArray = 
     [ "The One Ring",
     "Shire Sprinkle",
