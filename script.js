@@ -1,6 +1,6 @@
 //Variables
 var userName;
-var pocketMoney;
+var totalPrice = 0;
 var menuArray = 
     [ "The One Ring",
     "Shire Sprinkle",
