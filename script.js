@@ -1,7 +1,7 @@
 //Variables
 var userName;
 var pocketMoney;
-var menuArray 
+var menuArray = 
     [ "The One Ring",
     "Shire Sprinkle",
     "Misty Mountain Maple",
@@ -11,7 +11,7 @@ var menuArray
     "Smaugs Spicy Bagel",
     "Second Breakfast Bagel"]
 
-var priceArray
+var priceArray = 
     [ 6,
     7,
     7,
@@ -19,8 +19,7 @@ var priceArray
     6,
     8,
     7,
-    6.50
-    ]
+    6.50]
 
 /*****************
 Main Code
