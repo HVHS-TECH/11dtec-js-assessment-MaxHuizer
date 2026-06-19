@@ -31,8 +31,9 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 ******************************/
 function addToOrder(index) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[index] + ": $" + priceArray[index] +"</p>";
+    totalPrice = 
 }
 
 function completeOrder() {
-    OUTPUT.innerHTML += "<p>Your total price is"+"</p>"
+    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is"+ priceArray[index] + "</p>"
 }
