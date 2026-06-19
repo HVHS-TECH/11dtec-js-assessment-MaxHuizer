@@ -34,9 +34,11 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
-     totalPrice += priceArray[index];
+     totalPrice += priceArray[i];
+
+     ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
 
 function completeOrder() {
-    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
+    ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
