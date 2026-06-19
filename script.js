@@ -1,7 +1,15 @@
 //Variables
 var userName;
 var pocketMoney;
-
+var menuArray 
+    [ "The One Ring",
+    "Shire Sprinkle",
+    "Misty Mountain Maple",
+    "Gandalfs Sweet Spell",
+    "The Hobbit Hole",
+    "Bagel of Five Armies",
+    "Smaugs Spicy Bagel",
+    "Second Breakfast Bagel"]
 
 /*****************
 Main Code
