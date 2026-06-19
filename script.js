@@ -24,16 +24,13 @@ var priceArray =
 /*****************
 Main Code
 *****************/
+const ORDER_OUTPUT = document.getElementById("orderContent");
 
 /*****************************
  Functions
 ******************************/
 function addToOrder(index) {
-    OUTPUT.innerHTML +=
-        "<p>" + menuArray[index] +
-        ": $" + priceArray[index] +
-        "</p>";
-const ORDER_OUTPUT = document.getElementById("orderContent");
+    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[index] + ": $" + priceArray[index] +"</p>";
 }
 
 function completeOrder() {
