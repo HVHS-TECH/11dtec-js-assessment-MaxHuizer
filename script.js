@@ -1,6 +1,6 @@
 //Variables
 var userName;
-var totalPrice;
+var totalPrice = 0;
 var menuArray = 
     [ "The One Ring",
     "Shire Sprinkle",
@@ -33,8 +33,10 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 //the function for adding an item from the array to the ordercontent
 function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+
+     totalPrice += priceArray[index];
 }
 
-function completeOrder(i) {
-    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is"+ priceArray[i] + "</p>"
+function completeOrder() {
+    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
