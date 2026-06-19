@@ -15,3 +15,5 @@ addToOrder("The One Ring", $6);
 function addToOrder(_name, _price) {
     OUTPUT.innerHTML += "<p>" + _name + ": $" + _price+"</p>"
 }
+
+function completeOrder
