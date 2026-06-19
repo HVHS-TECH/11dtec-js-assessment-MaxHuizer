@@ -36,9 +36,9 @@ function addToOrder(i) {
 
      totalPrice = totalPrice + priceArray[i];
 
-     ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
 
 function completeOrder() {
+ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
     
 }
