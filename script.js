@@ -29,11 +29,12 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 /*****************************
  Functions
 ******************************/
-function addToOrder(index) {
-    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[index] + ": $" + priceArray[index] +"</p>";
-    totalPrice = 
+
+//the function for adding an item from the array to the ordercontent
+function addToOrder(i) {
+    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 }
 
-function completeOrder() {
-    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is"+ priceArray[index] + "</p>"
+function completeOrder(i) {
+    ORDER_OUTPUTOUTPUT.innerHTML += "<p>Your total price is"+ priceArray[i] + "</p>"
 }
