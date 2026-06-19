@@ -24,9 +24,6 @@ var priceArray =
 /*****************
 Main Code
 *****************/
-const OUTPUT = document.getElementById("orderContent");
-addToOrder
-
 
 /*****************************
  Functions
@@ -36,6 +33,7 @@ function addToOrder(index) {
         "<p>" + menuArray[index] +
         ": $" + priceArray[index] +
         "</p>";
+const OUTPUT = document.getElementById("orderContent");
 }
 
 function completeOrder() {
