@@ -11,7 +11,16 @@ var menuArray
     "Smaugs Spicy Bagel",
     "Second Breakfast Bagel"]
 
-var
+var priceArray
+    [ 6,
+    7,
+    7,
+    8,
+    6,
+    8,
+    7,
+    6.50
+    ]
 
 /*****************
 Main Code
