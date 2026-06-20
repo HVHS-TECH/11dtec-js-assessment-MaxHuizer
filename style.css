@@ -70,6 +70,8 @@ color:#dba904;
     width:200px;
     height:200;
     text-align:left;
+    border:2px solid;
+    border-color:gold;
 }
 
 .orderContent {
