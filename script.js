@@ -2,7 +2,7 @@
 var userName;
 var totalPrice = 0;
 var menuArray = 
-    [ "The One Ring",
+    ["The One Ring",
     "Shire Sprinkle",
     "Misty Mountain Maple",
     "Gandalfs Sweet Spell",
