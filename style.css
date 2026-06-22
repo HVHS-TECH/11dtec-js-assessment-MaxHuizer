@@ -150,4 +150,5 @@ color:#dba904;
     height: 100vh;
     background: white;
     display:flex;
+    visibility:hidden;
 }
