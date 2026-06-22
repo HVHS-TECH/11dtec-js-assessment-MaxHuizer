@@ -24,6 +24,7 @@ var priceArray =
 /*****************
 Main Code
 *****************/
+
 const ORDER_OUTPUT = document.getElementById("orderContent");
 
 /*****************************
