@@ -46,5 +46,5 @@ popup.classList.add("add")
 }
 
 function closePopup() {
-popup.classList.remove("hide")
+popup.classList.remove("add")
 }
