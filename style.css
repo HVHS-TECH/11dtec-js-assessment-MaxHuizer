@@ -148,7 +148,25 @@ color:#dba904;
 .popupContainer {
     width: 100%;
     height: 100vh;
-    background: white;
     display:flex;
     visibility:hidden;
+}
+
+.popupContainer.add {
+    visibility:visible;
+}
+
+.popup {
+    background: black;
+    color: gold;
+    border: 2px solid gold;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.popup input {
+    width: 80%;
+    padding: 8px;
 }
