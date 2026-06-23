@@ -21,6 +21,8 @@ var priceArray =
     7,
     6.50]
 
+let popup= document.getElementById("popup");
+
 /*****************
 Main Code
 *****************/
@@ -41,5 +43,6 @@ function addToOrder(i) {
 
 function completeOrder() {
 ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
-    
+popup.classList.add("popup")
+
 }
