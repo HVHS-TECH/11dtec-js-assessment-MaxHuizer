@@ -47,6 +47,7 @@ popup.classList.add("add")
 
 function closePopup() {
 popup.classList.remove("add")
+ORDER_OUTPUT.innerHTML += "<p>"
 }
 
 function getFormInput(){
