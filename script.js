@@ -48,3 +48,12 @@ popup.classList.add("add")
 function closePopup() {
 popup.classList.remove("add")
 }
+
+function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    userName = NAME_FIELD.value;
+
+    const MONEY_FIELD = document.getElementById("moneyField");
+    pocketMoney = Number(MONEY_FIELD.value);
+
+}
