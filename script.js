@@ -26,6 +26,7 @@ Main Code
 *****************/
 
 const ORDER_OUTPUT = document.getElementById("orderContent");
+const FORM_OUTPUT = document.getElementById("popupContainer");
 
 /*****************************
  Functions
@@ -42,6 +43,8 @@ function addToOrder(i) {
 function completeOrder() {
 ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 popup.classList.add("add")
+
+FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
 
 function closePopup() {

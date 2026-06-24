@@ -113,15 +113,16 @@
 <div class="popupContainer" id="popup">
 <div class="popup">
 <h2>Please Enter your Details</h2>
-    <form onsubmit="return false;">
-    <input type="text" id="nameField" userName="formName">
-    <input type="submit" onClick=getFormInput()>
-    </form>
 
-    <form onsubmit="return false;">
-    <input type="text" id="moneyField" age="formMoney">
-    <input type="submit" onClick=getFormInput()>
-    </form>
+<div class="orderTotal" id="popupContainer"></div>
+
+   <form id="userNameForm">
+    <input type="text" name="username" placeholder="Your Name">
+   </form>
+
+   <form id="pocketMoneyForm">
+    <input type="text" name="pocketMoney" placeholder="Amount of Money">
+   </form>
 
 <button type="button" onClick="closePopup()">OK</button>
 </div>
