@@ -27,6 +27,7 @@ Main Code
 
 const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
+const RECEIPT_OUTPUT = document.getElementById("receiptOutput");
 
 /*****************************
  Functions
@@ -66,5 +67,5 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 }
 
 function receiptPopup() {
-    receiptContainer.classList.add("add")
+    receiptOutput.classList.add("add")
 }
