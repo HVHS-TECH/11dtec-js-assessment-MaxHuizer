@@ -176,3 +176,35 @@ color:#dba904;
     width: 80%;
     padding: 8px;
 }
+
+.receiptContainer {
+    visibility: hidden;
+}
+
+.receiptContainer.add {
+    visibility:visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.receiptPopup {
+    background: black;
+    color: gold;
+    border: 2px solid gold;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.receiptPopup input {
+    width: 80%;
+    padding: 8px;
+}

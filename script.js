@@ -57,9 +57,14 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
  if(pocketMoney >= totalPrice){
     ORDER_OUTPUT.innerHTML += "<p>You can afford your meal</p>"
+    receiptPopup();
 
 } else {
     ORDER_OUTPUT.innerHTML += "<p>Sorry, you can't afford your meal</p>"
     alert("Sorry, you can't afford your meal")
     }
+}
+
+function receiptPopup() {
+    receiptPopup.classlist.add("add")
 }
