@@ -60,5 +60,6 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 } else {
     ORDER_OUTPUT.innerHTML += "<p>Sorry, you can't afford your meal</p>"
+    alert("Sorry, you can't afford your meal")
     }
 }
