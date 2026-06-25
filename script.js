@@ -41,7 +41,6 @@ function addToOrder(i) {
 }
 
 function completeOrder() {
-ORDER_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 popup.classList.add("add")
 
 FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
@@ -49,15 +48,10 @@ FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 
 function closePopup() {
 popup.classList.remove("add")
+
+const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
+const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
+
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money:" + pocketMoney + "</p>"
-}
-
-function getFormInput(){
-    const NAME_FIELD = document.getElementById("nameField");
-    userName = NAME_FIELD.value;
-
-    const MONEY_FIELD = document.getElementById("moneyField");
-    pocketMoney = Number(MONEY_FIELD.value);
-
 }
