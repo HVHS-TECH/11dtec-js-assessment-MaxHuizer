@@ -56,7 +56,7 @@ ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
  if(pocketMoney >= totalPrice){
-    ORDER_OUTPUT.innerHTML += "<p>You can afford the chocolate bar</p>"
+    ORDER_OUTPUT.innerHTML += "<p>You can afford your meal</p>"
 
 } else {
     ORDER_OUTPUT.innerHTML += "<p>Sorry, you can't afford your meal</p>"
