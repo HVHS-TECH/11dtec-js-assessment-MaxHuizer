@@ -53,5 +53,12 @@ const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.v
 const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
-ORDER_OUTPUT.innerHTML += "<p>Your Money:" + pocketMoney + "</p>"
+ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
+
+ if(pocketMoney >= totalPrice){
+    ORDER_OUTPUT.innerHTML += "<p>You can afford the chocolate bar</p>"
+
+} else {
+    ORDER_OUTPUT.innerHTML += "<p>Sorry, you can't afford your meal</p>"
+    }
 }
