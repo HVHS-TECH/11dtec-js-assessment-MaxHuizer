@@ -203,6 +203,7 @@ color:#dba904;
     background: white;
     color: black;
     padding: 30px;
+    border: 2px solid green;
     width: 800px;
     text-align: left;
 }
