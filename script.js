@@ -68,6 +68,7 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 function receiptPopup() {
     receiptOutput.classList.add("add")
+RECEIPT_OUTPUT.innerHTML += "<p>"
 }
 
 function closeReceiptPopup() {
