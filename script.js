@@ -72,7 +72,9 @@ receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
 
-var change = 
+
+const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
+var change = totalPrice - pocketMoney;
 
 RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
