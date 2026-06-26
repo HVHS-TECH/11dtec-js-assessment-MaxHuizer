@@ -72,10 +72,12 @@ function receiptPopup() {
 receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 
+//total price
+RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
+
+//calculate the change
 change = pocketMoney - totalPrice;
 RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
-
-RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
 
 // closes the receipt

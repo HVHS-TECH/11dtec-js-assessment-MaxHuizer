@@ -181,6 +181,10 @@ color:#dba904;
     visibility: hidden;
 }
 
+.receiptContainer.add p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 .receiptContainer.add {
     visibility:visible;
     position: absolute;
