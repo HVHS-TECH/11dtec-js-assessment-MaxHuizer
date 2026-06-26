@@ -29,6 +29,9 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
 const RECEIPT_OUTPUT = document.getElementById("receiptOutput");
 
+const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
+const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
+
 /*****************************
  Functions
 ******************************/
@@ -40,18 +43,16 @@ function addToOrder(i) {
      totalPrice = totalPrice + priceArray[i];
 
 }
-
+// function which shows the popup for enter details
 function completeOrder() {
 popup.classList.add("add")
 
 FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
 
+// closes the enter details popup if you have enough money
 function closePopup() {
 popup.classList.remove("add")
-
-const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
-const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
@@ -65,12 +66,13 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
     alert("Sorry, you can't afford your meal")
     }
 }
-
+// makes the receipt popup
 function receiptPopup() {
     receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p>"
 }
 
+// closes the receipt popup
 function closeReceiptPopup() {
 receiptOutput.classList.remove("add")
 }
