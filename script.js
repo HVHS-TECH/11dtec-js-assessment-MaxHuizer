@@ -66,11 +66,14 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
     alert("Sorry, you can't afford your meal")
     }
 }
-// makes the receipt popup
+// makes the receipt popup with the full details of the order
 function receiptPopup() {
-    receiptOutput.classList.add("add")
-RECEIPT_OUTPUT.innerHTML += "<p>" + userName +" ordered:" + "</p>"
-RECEIPT_OUTPUT.innerHTML += "<p>"
+receiptOutput.classList.add("add")
+RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
+RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
+
+var change = 
+
 RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
 
