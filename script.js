@@ -1,6 +1,7 @@
 //Variables
 var userName;
 var totalPrice = 0;
+var pocketMoney;
 var menuArray = 
     ["The One Ring",
     "Shire Sprinkle",
@@ -71,9 +72,6 @@ function receiptPopup() {
 receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
-
-
-var change = (totalPrice - pocketMoney);
 
 RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
