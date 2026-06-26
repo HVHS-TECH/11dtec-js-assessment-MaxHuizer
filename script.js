@@ -29,9 +29,6 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
 const RECEIPT_OUTPUT = document.getElementById("receiptOutput");
 
-const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
-const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
-
 /*****************************
  Functions
 ******************************/
@@ -54,6 +51,9 @@ FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 function closePopup() {
 popup.classList.remove("add")
 
+const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
+const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
+
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
@@ -69,10 +69,10 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 // makes the receipt popup
 function receiptPopup() {
     receiptOutput.classList.add("add")
-RECEIPT_OUTPUT.innerHTML += "<p>"
+RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
 
-// closes the receipt popup
+// closes the receipt
 function closeReceiptPopup() {
 receiptOutput.classList.remove("add")
 }
