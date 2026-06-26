@@ -74,6 +74,8 @@ RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 //total price
 RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 
+
+RECEIPT_OUTPUT.innerHTML += "<p> You paid $" + pocketMoney + "</p>"
 //calculate the change
 change = pocketMoney - totalPrice;
 RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
