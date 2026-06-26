@@ -27,7 +27,7 @@ Main Code
 
 const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
-const RECEIPT_OUTPUT = document.getElementById("receiptOutput");
+const RECEIPT_OUTPUT = document.getElementById("receiptTotal");
 
 /*****************************
  Functions
