@@ -69,7 +69,8 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 // makes the receipt popup
 function receiptPopup() {
     receiptOutput.classList.add("add")
-RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
+RECEIPT_OUTPUT.innerHTML += "<p>" + userName +" ordered:" + "</p>"
+RECEIPT_OUTPUT.innerHTML += "<p>"
 RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 }
 
