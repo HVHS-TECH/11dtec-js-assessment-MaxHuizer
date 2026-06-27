@@ -11,7 +11,7 @@ p {
 
 .everythingContainer {
     display:grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 .container {
