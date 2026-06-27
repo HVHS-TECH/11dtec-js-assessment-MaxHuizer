@@ -10,6 +10,7 @@ p {
 
 
 .everythingContainer {
+    display:grid;
     grid-template-columns:auto auto;
 }
 
