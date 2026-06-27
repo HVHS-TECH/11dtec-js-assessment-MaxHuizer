@@ -87,6 +87,7 @@ color:#dba904;
     border:2px solid;
     border-color: gold;
     grid-column:span 1;
+    width:200px;
     border-radius:5px;
 }
 
