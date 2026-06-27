@@ -75,6 +75,8 @@ color:#dba904;
 }
 
 .orderContent {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     padding:10px;
     grid-column: span 1;
     grid-row: span 10;
