@@ -10,8 +10,7 @@ p {
 
 .container {
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
     padding: 15px;
 }
 
@@ -77,7 +76,7 @@ color:#dba904;
 .orderContent {
     padding:10px;
     grid-column: span 1;
-    grid-row: span 10;
+    grid-row: auto;
     margin:10px;
     border:2px solid;
     border-color: gold;
