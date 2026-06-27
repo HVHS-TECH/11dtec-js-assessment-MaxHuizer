@@ -48,7 +48,7 @@ p {
     grid-template-columns:1fr 6fr 1fr;
     gap:10px;
     padding:10px;
-    grid-column: span 1;
+    grid-column: 1;
     margin:10px;
     border-radius:5px;
     border:2px solid;
@@ -86,8 +86,8 @@ color:#dba904;
     margin:10px;
     border:2px solid;
     border-color: gold;
-    grid-column:span 1;
-    width:auto;
+    grid-column: 2;
+    width:350px;
     border-radius:5px;
 }
 
@@ -97,7 +97,7 @@ color:#dba904;
     grid-template-rows: auto auto auto;
     gap:10px;
     padding:10px;
-    grid-column: span 1;
+    grid-column: 1;
     margin:10px;
     border-radius:5px;
     border:2px solid;
