@@ -34,12 +34,12 @@ p {
 }
 
 .donutsTitle {
-    grid-column:span 1;
+    grid-column:span 2;
     padding-left:10px;
 }
 
 .bagelsTitle {
-    grid-column:1;
+    grid-column:span 2;
     padding-left:10px;
 }
 
