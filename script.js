@@ -59,7 +59,7 @@ ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 
-if(typeof userName != "string" || userName == ""  || username.length < 3){
+if(userName = Number){
     alert ("Please enter a valid name")
     return
 }
