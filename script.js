@@ -59,9 +59,9 @@ ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 
-if(typeof userName = Number){
+if(typeof userName != "string" || userName == ""  || username.length < 3){
  alert ("Please enter a valid name")
- 
+ return
 }
 
  if(pocketMoney >= totalPrice){
@@ -69,6 +69,7 @@ if(typeof userName = Number){
 
 } else {
     alert("Sorry, you can't afford your meal")
+    return
     }
 
 }
