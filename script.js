@@ -65,7 +65,6 @@ if(pocketMoney >= totalPrice){
     alert("Sorry, you can't afford your meal")
     return
     }
-
 }
 
 // makes the receipt popup with the full details of the order
