@@ -67,7 +67,7 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
     if(userName = Number)
  alert ("Please enter a valid name")
- receiptPopup()
+ completeOrder()
 }
 
 // makes the receipt popup with the full details of the order
