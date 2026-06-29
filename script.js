@@ -41,6 +41,7 @@ function addToOrder(i) {
      totalPrice = totalPrice + priceArray[i];
 
 }
+
 // function which shows the popup for enter details
 function completeOrder() {
 popup.classList.add("add")
