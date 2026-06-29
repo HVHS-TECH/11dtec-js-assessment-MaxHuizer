@@ -63,7 +63,6 @@ if(pocketMoney >= totalPrice){
 
 } else {
     alert("Sorry, you can't afford your meal")
-    return
     }
 }
 
