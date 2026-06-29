@@ -8,13 +8,12 @@ p {
  font-family: "Cinzel", serif;
 }
 
-
 .everythingContainer {
     display:grid;
     grid-template-columns: auto auto;
 }
 
-.container {
+.titleContainer {
     display: grid;
     grid-column: span 1;
     grid-template-columns: auto;
