@@ -65,8 +65,8 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
     alert("Sorry, you can't afford your meal")
     }
 
-    if(nameField = )
-
+    if(nameField = "")
+ alert ("Please enter a valid name")
 }
 
 // makes the receipt popup with the full details of the order
