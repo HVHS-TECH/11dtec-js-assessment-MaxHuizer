@@ -60,11 +60,11 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 
 if(typeof userName != "string" || userName == ""  || username.length < 3){
- alert ("Please enter a valid name")
- return
+    alert ("Please enter a valid name")
+    return
 }
 
- if(pocketMoney >= totalPrice){
+if(pocketMoney >= totalPrice){
     receiptPopup()
 
 } else {
