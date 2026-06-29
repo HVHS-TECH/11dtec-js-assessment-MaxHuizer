@@ -65,7 +65,7 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
     alert("Sorry, you can't afford your meal")
     }
 
-    if(nameField = "")
+    if(NAME_FIELD = Number)
  alert ("Please enter a valid name")
 }
 
