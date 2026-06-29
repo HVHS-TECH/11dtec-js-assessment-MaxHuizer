@@ -39,7 +39,6 @@ function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
      totalPrice = totalPrice + priceArray[i];
-
 }
 
 // function which shows the popup for enter details
