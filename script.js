@@ -61,7 +61,7 @@ ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
 if(userName = Number){
  alert ("Please enter a valid name")
- completeOrder()
+ 
 }
 
  if(pocketMoney >= totalPrice){
