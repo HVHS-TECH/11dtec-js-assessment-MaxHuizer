@@ -58,12 +58,6 @@ const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
 ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 
-
-if(userName = Number){
-    alert ("Please enter a valid name")
-    return
-}
-
 if(pocketMoney >= totalPrice){
     receiptPopup()
 
