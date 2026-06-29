@@ -29,6 +29,8 @@ Main Code
 const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
 const RECEIPT_OUTPUT = document.getElementById("receiptTotal");
+const RECEIPTTOP_OUTPUT = document.getElementById("receiptTop");
+const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 
 /*****************************
  Functions
@@ -37,7 +39,7 @@ const RECEIPT_OUTPUT = document.getElementById("receiptTotal");
 //the function for adding an item from the array to the ordercontent
 function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
-    RECEIPT_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+    RECEIPTTOP_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
      totalPrice = totalPrice + priceArray[i];
 }
@@ -73,13 +75,13 @@ receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 
 //total price
-RECEIPT_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
 
 
-RECEIPT_OUTPUT.innerHTML += "<p> You paid $" + pocketMoney + "</p>"
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p> You paid $" + pocketMoney + "</p>"
 //calculate the change
 change = pocketMoney - totalPrice;
-RECEIPT_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
 }
 
 // closes the receipt
