@@ -68,12 +68,12 @@ if (userName == "") {
     completeOrderReturn();
 }
 
-if(pocketMoney >= totalPrice){
-    receiptPopup()
+else if(pocketMoney >= totalPrice){
+    receiptPopup();
 
 } else {
     alert("Sorry, you can't afford your meal")
-    completeOrderReturn()
+    completeOrderReturn();
     }
 
 ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
