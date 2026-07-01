@@ -63,9 +63,6 @@ popup.classList.remove("add")
 const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
 const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
-ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
-ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
-
 if(pocketMoney >= totalPrice){
     receiptPopup()
 
@@ -73,6 +70,14 @@ if(pocketMoney >= totalPrice){
     alert("Sorry, you can't afford your meal")
     completeOrderReturn()
     }
+
+if (userName == "") {
+    alert("Please enter a valid name");
+    completeOrderReturn();
+}
+
+ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
+ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 }
 
 
