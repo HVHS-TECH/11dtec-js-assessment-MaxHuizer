@@ -8,6 +8,12 @@ p {
  font-family: "Cinzel", serif;
 }
 
+hr {
+    border:none;
+    height:5px;
+    background-color:grey;
+}
+
 .everythingContainer {
     display:grid;
     grid-template-columns: auto auto;
@@ -217,4 +223,9 @@ color:#dba904;
 .receiptPopup input {
     width: 80%;
     padding: 8px;
+}
+
+.receiptContainer img {
+    width:50px;
+    height:auto;
 }

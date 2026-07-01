@@ -30,6 +30,7 @@ const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
 const RECEIPT_OUTPUT = document.getElementById("receiptTotal");
 const RECEIPTTOP_OUTPUT = document.getElementById("receiptTop");
+const RECEIPTTOTALPRICE_OUTPUT = document.getElementById("receiptTotalPrice");
 const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 
 /*****************************
@@ -39,7 +40,7 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 //the function for adding an item from the array to the ordercontent
 function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
-    RECEIPTTOP_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+    RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
      totalPrice = totalPrice + priceArray[i];
 }
@@ -49,6 +50,10 @@ function completeOrder() {
 popup.classList.add("add")
 
 FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
+}
+
+function completeOrderReturn(){
+popup.classList.add("add")
 }
 
 // closes the enter details popup if you have enough money
@@ -66,8 +71,10 @@ if(pocketMoney >= totalPrice){
 
 } else {
     alert("Sorry, you can't afford your meal")
+    completeOrderReturn()
     }
 }
+
 
 // makes the receipt popup with the full details of the order
 function receiptPopup() {
@@ -75,7 +82,7 @@ receiptOutput.classList.add("add")
 RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 
 //total price
-RECEIPTBOTTOM_OUTPUT.innerHTML += "<p> Your total price is $" + totalPrice + "</p>"
+RECEIPTTOTALPRICE_OUTPUT.innerHTML += "<h2> RECEIPT TOTAL: $" + totalPrice + "</h2>"
 
 
 RECEIPTBOTTOM_OUTPUT.innerHTML += "<p> You paid $" + pocketMoney + "</p>"
