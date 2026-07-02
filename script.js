@@ -42,7 +42,9 @@ function addToOrder(i) {
     ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
-    if menuArray 
+    if (menuArray (i) = 2) {
+        ORDER_OUTPUT.innerHTML += "<p>" + 
+    }
 
      totalPrice = totalPrice + priceArray[i];
 }
