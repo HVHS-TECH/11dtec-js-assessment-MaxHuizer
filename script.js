@@ -75,9 +75,6 @@ else if(pocketMoney >= totalPrice){
     alert("Sorry, you can't afford your meal")
     completeOrderReturn();
     }
-
-ORDER_OUTPUT.innerHTML += "<p>Name:" + userName + "</p>"
-ORDER_OUTPUT.innerHTML += "<p>Your Money: $" + pocketMoney + "</p>"
 }
 
 
