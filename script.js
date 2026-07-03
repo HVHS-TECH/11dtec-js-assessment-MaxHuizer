@@ -52,7 +52,7 @@ popup.classList.add("add")
 FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
 }
 
-function completeOrderReturn(){
+function completeOrderReturn() {
 popup.classList.add("add")
 }
 
