@@ -30,9 +30,11 @@ hr {
 .orderTitle {
     display: grid;
     grid-column: span 1;
-    grid-template-columns: auto;
-    grid-auto-rows: auto;
     padding: 15px;
+    border-radius:5px;
+    border:2px solid;
+    border-color: gold;
+    height:100px;
 }
 
 .Title {
