@@ -27,6 +27,14 @@ hr {
     padding: 15px;
 }
 
+.orderTitle {
+    display: grid;
+    grid-column: span 1;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    padding: 15px;
+}
+
 .Title {
     grid-column:span 2;
     text-align:center;
@@ -89,6 +97,7 @@ color:#dba904;
     padding:10px;
     margin:10px;
     border:2px solid;
+    
     border-color: gold;
     grid-column: 2;
     width:350px;
