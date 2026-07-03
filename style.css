@@ -27,15 +27,6 @@ hr {
     padding: 15px;
 }
 
-.orderTitle {
-    display: grid;
-    grid-column: span 1;
-    padding: 15px;
-    border-radius:5px;
-    border:2px solid;
-    border-color: gold;
-    height:100px;
-}
 
 .Title {
     grid-column:span 2;
