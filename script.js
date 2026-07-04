@@ -22,6 +22,11 @@ var priceArray =
     7,
     6.50]
 
+var quantityArray = 
+[
+    1,2,3,4,5,6,7,8,9,10
+]
+
 /*****************
 Main Code
 *****************/
@@ -43,6 +48,10 @@ function addToOrder(i) {
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 
      totalPrice = totalPrice + priceArray[i];
+
+     quantity = quantityArray[i] + 1 ;
+
+     ORDER_OUTPUT.innerHTML += "<p>" + quantity + "</p>";
 }
 
 // function which shows the popup for enter details
