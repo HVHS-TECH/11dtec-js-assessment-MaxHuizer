@@ -24,7 +24,7 @@ var priceArray =
 
 var quantityArray = 
 [
-    1,2,3,4,5,6,7,8,9,10
+    1,1,1,1,1,1,1,1,1,1,1,1,1
 ]
 
 /*****************
@@ -43,15 +43,16 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 ******************************/
 
 //the function for adding an item from the array to the ordercontent
-function addToOrder(i)(i){
-    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+function addToOrder(i, quantity){
+
+    totalPrice = totalPrice + priceArray[i];
+
+    totalQuantity = quantityArray[quantity];
+
+    totalQuantity = quantityArray[quantity] + quantityArray[quantity];
+    
+    ORDER_OUTPUT.innerHTML += "<p>" + totalQuantity + "X " + menuArray[i] + ": $" + priceArray[i] +"</p>";
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
-
-     totalPrice = totalPrice + priceArray[i];
-
-     quantity = quantityArray[i] + 10;
-
-     ORDER_OUTPUT.innerHTML += "<p>" + quantity + "</p>";
 }
 
 // function which shows the popup for enter details
