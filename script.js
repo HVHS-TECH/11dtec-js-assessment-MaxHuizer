@@ -43,13 +43,11 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 ******************************/
 
 //the function for adding an item from the array to the ordercontent
-function addToOrder(i, quantity){
+function addToOrder(i){
 
     totalPrice = totalPrice + priceArray[i];
-
-    quantityArray[i]++;
     
-    ORDER_OUTPUT.innerHTML += "<p>" + totalQuantity + "X " + menuArray[i] + ": $" + priceArray[i] +"</p>";
+    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 }
 
