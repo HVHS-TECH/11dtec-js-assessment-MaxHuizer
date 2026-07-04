@@ -24,7 +24,7 @@ var priceArray =
 
 var quantityArray = 
 [
-    1,1,1,1,1,1,1,1,1,1,1,1,1
+    0,0,0,0,0,0,0,0,
 ]
 
 /*****************
@@ -47,9 +47,7 @@ function addToOrder(i, quantity){
 
     totalPrice = totalPrice + priceArray[i];
 
-    totalQuantity = quantityArray[quantity];
-
-    totalQuantity = quantityArray[quantity] + quantityArray[quantity];
+    quantityArray
     
     ORDER_OUTPUT.innerHTML += "<p>" + totalQuantity + "X " + menuArray[i] + ": $" + priceArray[i] +"</p>";
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
