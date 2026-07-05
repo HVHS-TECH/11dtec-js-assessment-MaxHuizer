@@ -39,6 +39,14 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 ******************************/
 
 //the function for adding an item from the array to the ordercontent
+
+function addHowMuch(i){
+popup.classList.add("add")
+
+FORM_OUTPUT.innerHTML += "<p>How much would you like? </p>"
+}
+
+
 function addToOrder(i){
 
     totalPrice = totalPrice + priceArray[i];
