@@ -22,6 +22,8 @@ var priceArray =
     7,
     6.50]
 
+var hasNumber = Number
+
 
 /*****************
 Main Code
