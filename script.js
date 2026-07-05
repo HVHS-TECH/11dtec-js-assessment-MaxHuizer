@@ -22,10 +22,6 @@ var priceArray =
     7,
     6.50]
 
-var quantityArray = 
-[
-    0,0,0,0,0,0,0,0,
-]
 
 /*****************
 Main Code
