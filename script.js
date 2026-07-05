@@ -67,7 +67,7 @@ popup.classList.remove("add")
 const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
 const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
-if (userName == "" || userName === Number) {
+if (userName == "" || hasNumber ) {
     alert("Please enter a valid name");
     completeOrderReturn();
 }
