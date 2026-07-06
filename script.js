@@ -66,12 +66,7 @@ popup.classList.remove("add")
 const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
 const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
-if (userName = Number ) {
-    alert("Please enter a valid name");
-    completeOrderReturn();
-}
-
-else if(pocketMoney >= totalPrice){
+ if(pocketMoney >= totalPrice){
     receiptPopup();
 
 } else {
