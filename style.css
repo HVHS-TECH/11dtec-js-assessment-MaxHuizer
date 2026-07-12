@@ -17,6 +17,7 @@ hr {
 .everythingContainer {
     display:grid;
     grid-template-columns: auto auto;
+    margin-right:380px;
 }
 
 .titleContainer {
