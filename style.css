@@ -209,7 +209,7 @@ color:#dba904;
 
 .receiptContainer {
     visibility: hidden;
-    position:fixed;
+    position:absolute;
 }
 
 .receiptContainer.add p {
@@ -218,8 +218,8 @@ color:#dba904;
 
 .receiptContainer.add {
     visibility:visible;
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
