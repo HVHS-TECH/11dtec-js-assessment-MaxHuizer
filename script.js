@@ -66,7 +66,7 @@ popup.classList.remove("add")
 const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
 const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
 
- if(pocketMoney >= totalPrice){
+if(pocketMoney >= totalPrice){
     receiptPopup();
 
 } else {
@@ -74,7 +74,6 @@ const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(
     completeOrderReturn();
     }
 }
-
 
 
 // makes the receipt popup with the full details of the order
