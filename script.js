@@ -75,7 +75,6 @@ if(pocketMoney >= totalPrice){
     }
 }
 
-if(userName )
 
 
 // makes the receipt popup with the full details of the order
