@@ -76,7 +76,6 @@ if(pocketMoney >= totalPrice){
 }
 
 
-
 // makes the receipt popup with the full details of the order
 function receiptPopup() {
 receiptOutput.classList.add("add")
