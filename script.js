@@ -45,8 +45,9 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 function addToOrder(i){
 
     totalPrice = totalPrice + priceArray[i];
+    quantityArray[i]++;
     
-    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) +"</p>";
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 }
 
