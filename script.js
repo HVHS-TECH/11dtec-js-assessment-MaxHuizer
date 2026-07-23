@@ -47,7 +47,7 @@ function addToOrder(i){
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 }
 
-// this function shows the popup for enter details
+// this function shows the details popup
 function completeOrder() {
 popup.classList.add("add")
 
@@ -73,7 +73,6 @@ if(pocketMoney >= totalPrice){
     completeOrderReturn();
     }
 }
-
 
 // makes the receipt popup with the full details of the order
 function receiptPopup() {
