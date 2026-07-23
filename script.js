@@ -50,10 +50,10 @@ quantityArray[i]++;
 
 ORDER_OUTPUT.innerHTML = "Your Order:";
 
-for(let x = 0; x < menuArray.length; x++){
+for(let i = 0; i < menuArray.length; i++){
 
-if(quantityArray[x] > 0){
-ORDER_OUTPUT.innerHTML +="<p>" +quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
+if(quantityArray[i] > 0){
+ORDER_OUTPUT.innerHTML +="<p>" +quantityArray[i] + "x " + menuArray[i] + ": $" + (quantityArray[i] * priceArray[i]).toFixed(2) + "</p>";
 }
 }
 }
