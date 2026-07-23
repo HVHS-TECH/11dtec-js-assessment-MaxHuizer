@@ -94,4 +94,6 @@ function closeReceiptPopup() {
 receiptOutput.classList.remove("add")
 }
 
-for(let i=10; i>=10; )
+for(let i=10; i>=10; i++){
+    
+}
