@@ -45,24 +45,17 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 
 function addToOrder(i){
 
-    totalPrice = totalPrice + priceArray[i];
-    quantityArray[i]++;
+totalPrice = totalPrice + priceArray[i];
+quantityArray[i]++;
 
-    ORDER_OUTPUT.innerHTML = "Your Order:";
+ORDER_OUTPUT.innerHTML = "Your Order:";
 
-    for(let x = 0; x < menuArray.length; x++){
+for(let x = 0; x < menuArray.length; x++){
 
-        if(quantityArray[x] > 0){
-
-            ORDER_OUTPUT.innerHTML +=
-            "<p>" +
-            quantityArray[x] + "x " +
-            menuArray[x] +
-            ": $" +
-            (quantityArray[x] * priceArray[x]).toFixed(2) +
-            "</p>";
-        }
-    }
+if(quantityArray[x] > 0){
+ORDER_OUTPUT.innerHTML +="<p>" +quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
+}
+}
 }
 
 // this function shows the details popup
@@ -109,10 +102,10 @@ RECEIPTBOTTOM_OUTPUT.innerHTML = "";
 
 for(let x = 0; x < menuArray.length; x++){
 
-    if(quantityArray[x] > 0){
+if(quantityArray[x] > 0){
 
-        RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
-    }
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
+}
 }
 
 RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
