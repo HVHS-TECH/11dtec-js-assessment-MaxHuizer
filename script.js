@@ -37,8 +37,7 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
  Functions
 ******************************/
 
-//the function for adding an item from the array to the ordercontent
-
+//this function adds an item to the order and the receipt when they eventually
 
 function addToOrder(i){
 
@@ -48,7 +47,7 @@ function addToOrder(i){
     RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
 }
 
-// function which shows the popup for enter details
+// this function shows the popup for enter details
 function completeOrder() {
 popup.classList.add("add")
 
