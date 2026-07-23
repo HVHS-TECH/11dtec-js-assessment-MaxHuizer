@@ -93,3 +93,4 @@ RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
 function closeReceiptPopup() {
 receiptOutput.classList.remove("add")
 }
+
