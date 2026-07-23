@@ -40,7 +40,8 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
  Functions
 ******************************/
 
-//this function adds an item to the order and the receipt when they eventually
+//this function adds an item to the order and the receipt when they eventually complete the order
+// it also adds the quantity of the order instead of having an individual line for each item
 
 function addToOrder(i){
 
@@ -110,30 +111,18 @@ for(let x = 0; x < menuArray.length; x++){
 
     if(quantityArray[x] > 0){
 
-        RECEIPTBOTTOM_OUTPUT.innerHTML +=
-        "<p>" +
-        quantityArray[x] + "x " +
-        menuArray[x] +
-        ": $" +
-        (quantityArray[x] * priceArray[x]).toFixed(2) +
-        "</p>";
+        RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
     }
 }
 
-RECEIPTBOTTOM_OUTPUT.innerHTML +=
-"<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
 
 let change = pocketMoney - totalPrice;
 
-RECEIPTBOTTOM_OUTPUT.innerHTML +=
-"<p>Your change is $" + change.toFixed(2) + "</p>";
+RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>Your change is $" + change.toFixed(2) + "</p>";
 }
 
 // closes the receipt
 function closeReceiptPopup() {
 receiptOutput.classList.remove("add");
-}
-
-for(let i=10; i>=10; i--){
-    console.log("Current Count :" + i);
 }
