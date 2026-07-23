@@ -2,7 +2,7 @@
 var userName;
 var totalPrice = 0;
 var pocketMoney;
-var menuArray = 
+var menuArray =
     ["The One Ring",
     "Shire Sprinkle",
     "Misty Mountain Maple",
@@ -10,20 +10,20 @@ var menuArray =
     "The Hobbit Hole",
     "Bagel of Five Armies",
     "Smaugs Spicy Bagel",
-    "Second Breakfast Bagel"]
+    "Second Breakfast Bagel"];
 
-var priceArray = 
-    [ 6,
+var priceArray =
+    [6,
     7,
     7,
     8,
     6,
     8,
     7,
-    6.50]
+    6.50];
 
-var quantityArray = 
-[0,0,0,0,0,0,0,0];
+var quantityArray =
+    [0,0,0,0,0,0,0,0];
 
 /*****************
 Main Code
@@ -46,58 +46,94 @@ function addToOrder(i){
 
     totalPrice = totalPrice + priceArray[i];
     quantityArray[i]++;
-    
-    ORDER_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) +"</p>";
-    RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + menuArray[i] + ": $" + priceArray[i] +"</p>";
+
+    ORDER_OUTPUT.innerHTML = "Your Order:";
+
+    for(let x = 0; x < menuArray.length; x++){
+
+        if(quantityArray[x] > 0){
+
+            ORDER_OUTPUT.innerHTML +=
+            "<p>" +
+            quantityArray[x] + "x " +
+            menuArray[x] +
+            ": $" +
+            (quantityArray[x] * priceArray[x]).toFixed(2) +
+            "</p>";
+        }
+    }
 }
 
 // this function shows the details popup
 function completeOrder() {
-popup.classList.add("add")
+popup.classList.add("add");
 
-FORM_OUTPUT.innerHTML += "<p>Your total price is $"+ totalPrice + "</p>"
+FORM_OUTPUT.innerHTML = "<p>Your total price is $" + totalPrice.toFixed(2) + "</p>";
 }
 
 function completeOrderReturn() {
-popup.classList.add("add")
+popup.classList.add("add");
 }
 
 // closes the enter details popup if you have enough money
 function closePopup() {
-popup.classList.remove("add")
+popup.classList.remove("add");
 
-const NAME_FIELD = document.getElementById("nameField"); userName = NAME_FIELD.value;
-const MONEY_FIELD = document.getElementById("moneyField"); pocketMoney = Number(MONEY_FIELD.value);
+const NAME_FIELD = document.getElementById("nameField");
+userName = NAME_FIELD.value;
+
+const MONEY_FIELD = document.getElementById("moneyField");
+pocketMoney = Number(MONEY_FIELD.value);
 
 if(pocketMoney >= totalPrice){
     receiptPopup();
 
 } else {
-    alert("Sorry, you can't afford your meal")
+    alert("Sorry, you can't afford your meal");
     completeOrderReturn();
-    }
+}
 }
 
 // makes the receipt popup with the full details of the order
 function receiptPopup() {
-receiptOutput.classList.add("add")
-RECEIPT_OUTPUT.innerHTML += "<p> Name: " + userName + "</p>"
 
-//total price
-RECEIPTTOTALPRICE_OUTPUT.innerHTML += "<h2> RECEIPT TOTAL: $" + totalPrice + "</h2>"
+receiptOutput.classList.add("add");
 
+RECEIPT_OUTPUT.innerHTML = "<p>Name: " + userName + "</p>";
 
-RECEIPTBOTTOM_OUTPUT.innerHTML += "<p> You paid $" + pocketMoney + "</p>"
-//calculate the change
-change = pocketMoney - totalPrice;
-RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>Your change is $" + change + "</p>"
+RECEIPTTOTALPRICE_OUTPUT.innerHTML =
+"<h2>RECEIPT TOTAL: $" + totalPrice.toFixed(2) + "</h2>";
+
+RECEIPTBOTTOM_OUTPUT.innerHTML = "";
+
+for(let x = 0; x < menuArray.length; x++){
+
+    if(quantityArray[x] > 0){
+
+        RECEIPTBOTTOM_OUTPUT.innerHTML +=
+        "<p>" +
+        quantityArray[x] + "x " +
+        menuArray[x] +
+        ": $" +
+        (quantityArray[x] * priceArray[x]).toFixed(2) +
+        "</p>";
+    }
+}
+
+RECEIPTBOTTOM_OUTPUT.innerHTML +=
+"<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
+
+let change = pocketMoney - totalPrice;
+
+RECEIPTBOTTOM_OUTPUT.innerHTML +=
+"<p>Your change is $" + change.toFixed(2) + "</p>";
 }
 
 // closes the receipt
 function closeReceiptPopup() {
-receiptOutput.classList.remove("add")
+receiptOutput.classList.remove("add");
 }
 
-for(let i=10; i>=10; i++){
-    console.log("Current Count :" +i);
+for(let i=10; i>=10; i--){
+    console.log("Current Count :" + i);
 }
