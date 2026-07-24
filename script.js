@@ -22,6 +22,9 @@ const priceArray =
     7,
     6.50];
 
+const quantityArray = 
+[0,0,0,0,0,0,0,0];
+
 /*****************
 Main Code
 *****************/
