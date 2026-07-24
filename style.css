@@ -100,7 +100,7 @@ color:#dba904;
     width:350px;
     border-radius:5px;
     position:fixed;
-    top: 10px;
+    top: 60px;
     right: 10px;
     z-index:1;
 }
@@ -184,8 +184,8 @@ color:#dba904;
     width:150px;
     height:35px;
     position:fixed;
-    right:28px;
-    top:100px;
+    right:200px;
+    top:25px;
     z-index:2;
 }
 
@@ -199,8 +199,8 @@ color:#dba904;
     width:150px;
     height:35px;
     position:fixed;
-    right:28px;
-    top:100px;
+    right:200px;
+    top:25px;
     z-index:2;
 }
 
