@@ -40,13 +40,10 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 //this function adds an item to the order and the receipt when they eventually complete the order
 // it also adds the quantity of the order instead of having an individual line for each item
 
-function addToOrder {
+function addToOrder(i){
 
 totalPrice = totalPrice + priceArray[i];
-
-ORDER_OUTPUT.innerHTML = "Your Order:";
-
-ORDER_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + (quantityArray[i] * priceArray[i]).toFixed(2) + "</p>";
+ORDER_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) + "</p>";
 }
 
 // this function shows the details popup
