@@ -44,6 +44,7 @@ function addToOrder(i){
 
 totalPrice = totalPrice + priceArray[i];
 ORDER_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) + "</p>";
+RECEIPTBOTTOM_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) + "</p>";
 }
 
 // this function shows the details popup
@@ -88,13 +89,6 @@ RECEIPTTOTALPRICE_OUTPUT.innerHTML =
 
 RECEIPTBOTTOM_OUTPUT.innerHTML = "";
 
-for(let x = 0; x < menuArray.length; x++){
-
-if(quantityArray[x] > 0){
-
-RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>" + quantityArray[x] + "x " + menuArray[x] + ": $" + (quantityArray[x] * priceArray[x]).toFixed(2) + "</p>";
-}
-}
 
 RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
 
