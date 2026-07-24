@@ -87,8 +87,8 @@ if(userName === ""){
     completeOrderReturn();
 }
 
-if(userName === Number){
-    alert("")
+if(userName.length is ){
+    alert("Please enter a valid name")
 }
 }
 
