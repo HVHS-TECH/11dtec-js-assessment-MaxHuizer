@@ -81,6 +81,15 @@ if(pocketMoney >= totalPrice){
     alert("Sorry, you can't afford your meal");
     completeOrderReturn();
 }
+
+if(userName === ""){
+    alert("Please enter a name");
+    completeOrderReturn();
+}
+
+if(userName === Number){
+    alert("")
+}
 }
 
 // makes the receipt popup with the full details of the order
