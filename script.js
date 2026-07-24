@@ -45,10 +45,12 @@ function addToOrder(i){
 totalPrice = totalPrice + priceArray[i];
 ORDER_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) + "</p>";
 RECEIPTBOTTOM_OUTPUT.innerHTML +="<p>" + menuArray[i] + ": $" + priceArray[i].toFixed(2) + "</p>";
+
 }
 
 // this function shows the details popup
 function completeOrder() {
+
 popup.classList.add("add");
 
 FORM_OUTPUT.innerHTML = "<p>Your total price is $" + totalPrice.toFixed(2) + "</p>";
