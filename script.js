@@ -80,15 +80,19 @@ if(pocketMoney >= totalPrice){
 } else {
     alert("Sorry, you can't afford your meal");
     completeOrderReturn();
+    return;
 }
 
 if(userName === ""){
     alert("Please enter a name");
     completeOrderReturn();
+    return;
 }
 
 if(userName.length > 20){
     alert("Please enter a valid name")
+    completeOrderReturn();
+    return;
 }
 
 }
