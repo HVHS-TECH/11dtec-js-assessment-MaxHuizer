@@ -74,25 +74,20 @@ userName = NAME_FIELD.value;
 const MONEY_FIELD = document.getElementById("moneyField");
 pocketMoney = Number(MONEY_FIELD.value);
 
-if(pocketMoney >= totalPrice){
-    receiptPopup();
-
-} else {
-    alert("Sorry, you can't afford your meal");
-    completeOrderReturn();
-    return;
-}
-
 if(userName === ""){
     alert("Please enter a name");
     completeOrderReturn();
-    return;
 }
-
-if(userName.length > 20){
-    alert("Please enter a valid name")
+else if(userName.length > 20){
+    alert("Please enter a valid name");
     completeOrderReturn();
-    return;
+}
+else if(pocketMoney < totalPrice){
+    alert("Sorry, you can't afford your meal");
+    completeOrderReturn();
+}
+else{
+    receiptPopup();
 }
 
 }
