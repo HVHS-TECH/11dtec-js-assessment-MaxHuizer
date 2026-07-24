@@ -88,6 +88,7 @@ else if(pocketMoney < totalPrice){
 }
 else if(/\d/.test(userName)){
     alert("Please enter a name without numbers");
+    completeOrderReturn();
 }
 else{
     receiptPopup();
