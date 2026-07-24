@@ -2,7 +2,7 @@
 var userName;
 var totalPrice = 0;
 var pocketMoney;
-var menuArray =
+const menuArray =
     ["The One Ring",
     "Shire Sprinkle",
     "Misty Mountain Maple",
@@ -12,7 +12,7 @@ var menuArray =
     "Smaugs Spicy Bagel",
     "Second Breakfast Bagel"];
 
-var priceArray =
+const priceArray =
     [6,
     7,
     7,
@@ -25,6 +25,8 @@ var priceArray =
 /*****************
 Main Code
 *****************/
+
+//Outputs for different divs
 
 const ORDER_OUTPUT = document.getElementById("orderContent");
 const FORM_OUTPUT = document.getElementById("popupContainer");
