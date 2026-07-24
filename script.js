@@ -91,7 +91,6 @@ if(userName.length > 20){
     alert("Please enter a valid name")
 }
 
-if
 }
 
 // makes the receipt popup with the full details of the order
