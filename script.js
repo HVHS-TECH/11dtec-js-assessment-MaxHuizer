@@ -117,3 +117,9 @@ RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>Your change is $" + change.toFixed(2) + "<
 function closeReceiptPopup() {
 receiptOutput.classList.remove("add");
 }
+
+function resetOrder() {
+    totalPrice = 0;
+    
+    RECEIPTBOTTOM_OUTPUT.innerHTML = "";
+}

@@ -154,7 +154,7 @@ color:#dba904;
     width:150px;
     height:35px;
     position:fixed;
-    right:28px;
+    right:100px;
     top:25px;
     z-index:2;
 }
@@ -169,7 +169,7 @@ color:#dba904;
     width:150px;
     height:35px;
     position:fixed;
-    right:28px;
+    right:100px;
     top:25px;
     z-index:2;
 }
@@ -181,10 +181,10 @@ color:#dba904;
     font-family:"Cinzel", serif;
     color:gold;
     border-radius:100px;
-    width:150px;
+    width:125px;
     height:35px;
     position:fixed;
-    right:200px;
+    right:269px;
     top:25px;
     z-index:2;
 }
@@ -196,10 +196,10 @@ color:#dba904;
     color:black;
     font-family:"Cinzel", serif;
     border-radius:100px;
-    width:150px;
+    width: 125px;
     height:35px;
     position:fixed;
-    right:200px;
+    right:269px;
     top:25px;
     z-index:2;
 }
