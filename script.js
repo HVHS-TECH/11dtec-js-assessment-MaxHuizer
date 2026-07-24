@@ -87,9 +87,6 @@ RECEIPT_OUTPUT.innerHTML = "<p>Name: " + userName + "</p>";
 RECEIPTTOTALPRICE_OUTPUT.innerHTML =
 "<h2>RECEIPT TOTAL: $" + totalPrice.toFixed(2) + "</h2>";
 
-RECEIPTBOTTOM_OUTPUT.innerHTML = "";
-
-
 RECEIPTBOTTOM_OUTPUT.innerHTML += "<p>You paid $" + pocketMoney.toFixed(2) + "</p>";
 
 let change = pocketMoney - totalPrice;
