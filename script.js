@@ -120,6 +120,6 @@ receiptOutput.classList.remove("add");
 
 function resetOrder() {
     totalPrice = 0;
-    
+    ORDER_OUTPUT.innerHTML = "";
     RECEIPTBOTTOM_OUTPUT.innerHTML = "";
 }
