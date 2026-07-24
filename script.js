@@ -86,6 +86,9 @@ else if(pocketMoney < totalPrice){
     alert("Sorry, you can't afford your meal");
     completeOrderReturn();
 }
+else if(/\d/.userName){
+    alert("Please enter a name without numbers");
+}
 else{
     receiptPopup();
 }
