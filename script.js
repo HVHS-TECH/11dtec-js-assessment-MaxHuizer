@@ -43,7 +43,6 @@ const RECEIPTBOTTOM_OUTPUT = document.getElementById("receiptBottom");
 ******************************/
 
 //this function adds an item to the order and the receipt when they eventually complete the order
-// it also adds the quantity of the order instead of having an individual line for each item
 
 function addToOrder(i){
 
